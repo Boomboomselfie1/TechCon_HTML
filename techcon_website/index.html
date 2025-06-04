@@ -3,6 +3,60 @@
 <head>
     <meta charset="UTF-8" />
     <title>TechCon 2024 Conference</title>
+    <style>
+        /* Optional: Visually hide screen reader-only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Basic styling for structure */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #003366;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1em 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 1em;
+        }
+    </style>
 </head>
 <body>
 
@@ -30,13 +84,13 @@
                 <track src="promo-video-subtitles.vtt" kind="subtitles" srclang="en" label="English" default />
                 Sorry, your browser does not support the video tag.
             </video>
-            <p id="video-desc" class="sr-only">Promotional video for TechCon 2024 with subtitles available.</p>
+            <p id="video-desc" class="sr-only">Promotional video for TechCon 2024 with subtitles available for accessibility.</p>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 TechCon Conference</p>
+        <p>&copy; 2024 TechCon Conference. All rights reserved. | Copyright</p>
     </footer>
 
 </body>
